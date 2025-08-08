@@ -10,10 +10,17 @@
 
 body {
     padding: 20px;
+    background-color: var(--secondary);
 }
 
 .css-header-style{
     background-color: var(--primary);
+    font-family: var(--font-one);
+}
+
+.css-h1-style{
+    color: var(--neutral);
+    font-size: 2em;
 }
 
 h1, h2, h3 {
@@ -37,4 +44,13 @@ h1, h2, h3 {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.css-footer-style{
+    background-color: var(--primary);
+    font-family: var(--font-one);
+}
+.css-footer-p-style{
+    color: var(--neutral);
+    font-size: 16px;
 }
