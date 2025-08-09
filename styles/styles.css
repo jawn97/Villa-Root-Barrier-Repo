@@ -1,11 +1,27 @@
 :root {
-    --primary: #2E7D32; /* forest green for the navbar, footer, and product highlights. */
+    --primary: #1B7D34; /* forest green for the navbar, footer, and product highlights. */
     --secondary: #C8E6C9; /* mint green for section backgrounds to break up content visually. */
-    --accent: #FFB300; /* amber sparingly for buttons or icons to guide user attention. */
+    --accent: #CCCC00; /* amber sparingly for buttons or icons to guide user attention. */
     --neutral: #F5F5F5; /* Clean background for content sections. Enhances readability. */
     --text: #212121; /* Strong contrast for body text. Modern and accessible. */
     --font-one: 'Roboto', Arial, Helvetica, sans-serif;
     --font-two: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 775px) {
+  .css-header-text-container-style {
+    display: none !important;
+  }
+  .css-header-container-style{
+    background: linear-gradient(90deg, var(--accent) 56%, var(--primary) 70%) !important;
+
+  }
+}
+
+@media (min-width: 1815px) {
+    .css-header-container-style{
+        background: linear-gradient(90deg, var(--neutral) 0%, var(--accent) 25%, var(--primary) 90%);
+    }
 }
 
 body {
@@ -13,18 +29,37 @@ body {
     background-color: var(--secondary);
 }
 
-.css-header-style{
-    background-color: var(--primary);
+.css-header-container-style{
+    background: linear-gradient(90deg, var(--neutral) 1%, var(--accent) 56%, var(--primary) 70%);
     font-family: var(--font-one);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0.35,0.35);
+}
+
+.css-header-text-container-style{
+    background-color: #1B7D34;
+    padding: 15px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.50);
 }
 
 .css-h1-style{
     color: var(--neutral);
     font-size: 2em;
+    font-weight: 600;
+    text-shadow: 2px 4px 16px rgba(0,0,0,0.80);
+    letter-spacing: 2px;
 }
 
 h1, h2, h3 {
     color: #333;
+}
+
+.header-image-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .container {
