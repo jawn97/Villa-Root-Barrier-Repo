@@ -86,7 +86,7 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     background: rgba(50, 50, 50, 0.7);
-    z-index: 1;
+    z-index: 1; /* 'lowest' positioned layer = z-index value of 1*/
 }
 
 /* Content above the dim */
