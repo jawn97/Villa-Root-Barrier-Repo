@@ -139,7 +139,6 @@ h1, h2, h3 {
 .css-footer-style {
     background-color: var(--primary);
     font-family: var(--font-one);
-    text-align: center;
     padding: 10px 0;
     width: 100%;
 }
