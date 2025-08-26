@@ -9,6 +9,64 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+<style>
+    /* Extra small devices (phones, less than 576px) */
+    @media (max-width: 575.98px) { 
+    /* CSS rules for phones */
+        .css-main-content-query{
+            display: flex;
+            flex-direction: column;
+        }
+        .copyright-query{
+            display: none;
+            
+        }
+    }
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) { 
+    /* CSS rules for small devices */
+        .css-main-content-query{
+            display: flex;
+            flex-direction: column;
+        }
+        .copyright-query{
+            display: none;
+        }
+    }
+
+    /* Medium devices (tablets, 768px and up) */ /* starting here is where hamburger menu appears*/
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+    /* CSS rules for tablets */
+        .css-main-content-query{
+            display: flex;
+            flex-direction: column;
+        }
+        .copyright-query{
+            display: none;
+        }
+    }
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1485px) { 
+    /* CSS rules for desktops */
+        .media-query-images-column{
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-evenly !important;
+            align-items: center !important;
+        }
+        #css-images-query-top{
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+        }
+    }
+
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+    /* CSS rules for large desktops */
+    }
+</style>
 <body class="d-flex flex-column min-vh-100" id="top">
     <header class="css-header-container-style rounded" id="top">
         <div class="css-header-text-container-style rounded">
@@ -35,7 +93,7 @@
             </div>
         </nav>
         <div class="bg-dim"></div>
-        <div class="row">
+        <div class="row css-main-content-query">
             <div class="col ml-3" style="color: white; flex-grow: .5;">
                 <h2 class="css-main-content-style" style="color: white; line-height: 4rem;">Please let us introduce ourselves,</h2>
                 <p class="mb-3 css-main-content-style" style="line-height: 23px;">Welcome to Villa Root Barrier, the manufacturer of root diversion products and the distribution of tree planting & erosion control products for over 25 years. 
@@ -57,11 +115,11 @@
                 assist in any submittal needs you may have. Look to Villa for quality products, value in price, and service that is second to none.</p>
                 <p class="mb-3 css-main-content-style">Thank you again for your consideration, <div style="line-height: 4rem;">Villa Landscape Products</div></p>
             </div>
-            <div class="col d-flex justify-content-around align-items-center flex-column" style="flex-grow: .5;">
-                <a href="#" style="margin-bottom: 30px; margin-top: 20px;">
+            <div class="col d-flex justify-content-around align-items-center flex-column media-query-images-column" style="flex-grow: .5;">
+                <a href="#" id="css-images-query-top" style="margin-bottom: 30px; margin-top: 20px;">
                     <img src="images/OrderOnlineNow_btn.jpg" height="100px" class="rounded css-image-styles">
                 </a>
-                <a href="https://microsite.caddetails.com/main/company/viewcompanycontent?companyID=414&viewSource=Microsite&isFeatured=False&view=Default&sortOrder3d=default&microsite=1" target="_blank">
+                <a id="css-images-query-bottom" href="https://microsite.caddetails.com/main/company/viewcompanycontent?companyID=414&viewSource=Microsite&isFeatured=False&view=Default&sortOrder3d=default&microsite=1" target="_blank">
                     <img src="images/caddetails.jpg" height="100px" class="rounded css-image-styles">
                 </a> 
             </div>
@@ -69,7 +127,7 @@
     </main>
     <footer class="css-footer-style d-flex justify-content-around mt-auto rounded">
         <span class="css-footer-p-style">18363 Pasadena St. Lake Elsinore, CA 92530</span>
-        <span class="css-footer-p-style">&copy; 2025 Villa Root Barrier</span>
+        <span class="css-footer-p-style copyright-query">&copy; 2025 Villa Root Barrier</span>
         <span class="css-footer-p-style">Call us at 1-800-654-4067</span>
     </footer>
     <a href="#top" class="chevron-double-up" style="color: black;">
